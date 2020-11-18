@@ -1,70 +1,36 @@
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
-#PolskaSVG {
-  max-height: 93vh;
-  margin: 2vh;
+
+h1 {
+    text-align: center;
 }
-#pomorskie, #zPomorskie, #podlaskie, #wMazurskie, #kPomorskie, #mazowieckie, #wielkopolskie, #dSlaskie, #lodzkie,
-#lubelskie, #opolskie, #slaskie, #swietokrzyskie, #malopolskie, #podkarpackie, #lubuskie{
-  fill:#fafafa;
-  stroke:#000;
-  stroke-width:1;
-}
-#pomorskie:hover, #zPomorskie:hover, #podlaskie:hover, #wMazurskie:hover, #kPomorskie:hover, #mazowieckie:hover, #wielkopolskie:hover, #dSlaskie:hover, #lodzkie:hover,
-#lubelskie:hover, #opolskie:hover, #slaskie:hover, #swietokrzyskie:hover, #malopolskie:hover, #podkarpackie:hover, #lubuskie:hover{
-  fill:#fc7c41;
-}
+
 h2 {
-  margin: 0 10px;
+    margin: 0 10px;
 }
+
+#PolskaSVG {
+    max-height: 85vh;
+    margin: 2vh;
+}
+
+#pomorskie, #zPomorskie, #podlaskie, #wMazurskie, #kPomorskie, #mazowieckie, #wielkopolskie, #dSlaskie, #lodzkie,
+#lubelskie, #opolskie, #slaskie, #swietokrzyskie, #malopolskie, #podkarpackie, #lubuskie {
+    fill: #fafafa;
+    stroke: #000;
+    stroke-width: 1;
+}
+
+#pomorskie:hover, #zPomorskie:hover, #podlaskie:hover, #wMazurskie:hover, #kPomorskie:hover, #mazowieckie:hover, #wielkopolskie:hover, #dSlaskie:hover, #lodzkie:hover,
+#lubelskie:hover, #opolskie:hover, #slaskie:hover, #swietokrzyskie:hover, #malopolskie:hover, #podkarpackie:hover, #lubuskie:hover {
+    fill: #fc7c41;
+}
+
 @media screen and (max-width: 750px) {
-  .desktop {
-    display: none;
-  }
+    .desktop {
+        display: none;
+    }
 }
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-}
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-}
-
